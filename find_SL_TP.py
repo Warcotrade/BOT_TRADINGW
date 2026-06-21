@@ -5,15 +5,18 @@ def find_SL_TP(entry_price, direction="long", stop_loss_percent=None, target_per
     target_percent = TARGET_PERCENT if target_percent is None else target_percent
     direction = direction.lower()
 
+    sl_mult = stop_loss_percent / 100
+    tp_mult = target_percent / 100
+
     if entry_price <= 0:
         raise ValueError("entry_price must be greater than 0")
 
     if direction == "long":
-        stop_loss = entry_price * (1 - stop_loss_percent)
-        target = entry_price * (1 + target_percent)
+        stop_loss = entry_price * (1 - sl_mult)
+        target = entry_price * (1 + tp_mult)
     elif direction == "short":
-        stop_loss = entry_price * (1 + stop_loss_percent)
-        target = entry_price * (1 - target_percent)
+        stop_loss = entry_price * (1 + sl_mult)
+        target = entry_price * (1 - tp_mult)
     else:
         raise ValueError("direction must be 'long' or 'short'")
 

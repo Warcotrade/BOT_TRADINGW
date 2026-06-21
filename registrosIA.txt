@@ -31,3 +31,4 @@
 - config.py: variables renombradas a STOP_LOSS_PERCENT (0.019) y TARGET_PERCENT (0.005)
 - main.py: actualizado para usar la nueva API
 - Unificación de idioma: código en inglés (variables, funciones, mensajes de error), README.md en español, registrosIA.txt se mantiene en español
+- find_SL_TP.py: los porcentajes ahora se configuran como valor directo (ej: 1.9 = 1.9%), se divide entre 100 internamente
