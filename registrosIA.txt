@@ -30,3 +30,4 @@
   - Retorno como diccionario en vez de tupla
 - config.py: variables renombradas a STOP_LOSS_PERCENT (0.019) y TARGET_PERCENT (0.005)
 - main.py: actualizado para usar la nueva API
+- Unificación de idioma: código en inglés (variables, funciones, mensajes de error), README.md en español, registrosIA.txt se mantiene en español
