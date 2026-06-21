@@ -1,14 +1,14 @@
 import config
-from find_SL_TP import calcular_sl_tp
+from find_SL_TP import find_SL_TP
 
 def main():
     print("Bot_tradingW iniciado")
 
-    precio = 100.0
-    sl, tp = calcular_sl_tp(precio, config.SL_PORCENTAJE, config.TP_PORCENTAJE)
-    print(f"Precio entrada: {precio}")
-    print(f"Stop Loss: {sl:.2f} ({config.SL_PORCENTAJE}%)")
-    print(f"Take Profit: {tp:.2f} ({config.TP_PORCENTAJE}%)")
+    resultado = find_SL_TP(entry_price=100.0, direction="long")
+    print(resultado)
+
+    resultado_short = find_SL_TP(entry_price=100.0, direction="short")
+    print(resultado_short)
 
 if __name__ == "__main__":
     main()

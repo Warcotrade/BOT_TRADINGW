@@ -21,3 +21,12 @@
 - Creación de config.py con valores de SL (2%) y TP (4%)
 - Creación de find_SL_TP.py con la función calcular_sl_tp()
 - main.py actualizado para usar config.py y find_SL_TP.py
+- Refactor find_SL_TP.py:
+  - Renombrado: calcular_sl_tp() → find_SL_TP()
+  - Parámetros en inglés con valores por defecto desde config
+  - Porcentajes pasan a formato decimal (ej: 2.0% → 0.02)
+  - Soporte para long y short
+  - Validaciones de entrada
+  - Retorno como diccionario en vez de tupla
+- config.py: variables renombradas a STOP_LOSS_PERCENT (0.019) y TARGET_PERCENT (0.005)
+- main.py: actualizado para usar la nueva API

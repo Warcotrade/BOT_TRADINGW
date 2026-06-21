@@ -1,4 +1,25 @@
-def calcular_sl_tp(precio_entrada, sl_porcentaje, tp_porcentaje):
-    sl = precio_entrada * (1 - sl_porcentaje / 100)
-    tp = precio_entrada * (1 + tp_porcentaje / 100)
-    return sl, tp
+from config import STOP_LOSS_PERCENT, TARGET_PERCENT
+
+def find_SL_TP(entry_price, direction="long", stop_loss_percent=None, target_percent=None):
+    stop_loss_percent = STOP_LOSS_PERCENT if stop_loss_percent is None else stop_loss_percent
+    target_percent = TARGET_PERCENT if target_percent is None else target_percent
+    direction = direction.lower()
+
+    if entry_price <= 0:
+        raise ValueError("entry_price debe ser mayor que 0")
+
+    if direction == "long":
+        stop_loss = entry_price * (1 - stop_loss_percent)
+        target = entry_price * (1 + target_percent)
+    elif direction == "short":
+        stop_loss = entry_price * (1 + stop_loss_percent)
+        target = entry_price * (1 - target_percent)
+    else:
+        raise ValueError("direction debe ser 'long' o 'short'")
+
+    return {
+        "entry_price": entry_price,
+        "direction": direction,
+        "stop_loss": round(stop_loss, 6),
+        "target": round(target, 6),
+    }

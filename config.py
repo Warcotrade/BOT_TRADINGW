@@ -1,4 +1,4 @@
 # Configuración de Stop Loss y Take Profit
 
-SL_PORCENTAJE = 2.0       # Stop Loss en %
-TP_PORCENTAJE = 4.0       # Take Profit en %
+STOP_LOSS_PERCENT = 0.019    # 1.9%
+TARGET_PERCENT = 0.005       # 0.5%
