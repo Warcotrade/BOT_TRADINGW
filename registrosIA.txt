@@ -17,3 +17,4 @@
 - Se establece que todo lo solicitado se registrará automáticamente en este archivo sin necesidad de recordatorio
 - Actualización de README.md: agregado comando de instalación `pip install -r requirements.txt` para PowerShell
 - Lenguaje definido: todo el proyecto se desarrollará en Python
+- Creación de main.py como punto de entrada del bot
