@@ -21,8 +21,8 @@ def find_SL_TP(entry_price, direction="long", stop_loss_percent=None, target_per
         raise ValueError("direction must be 'long' or 'short'")
 
     return {
-        "entry_price": entry_price,
+        "entry_price": float(entry_price),
         "direction": direction,
-        "stop_loss": round(stop_loss, 2),
-        "target": round(target, 2),
+        "stop_loss": float(round(stop_loss, 2)),
+        "target": float(round(target, 2)),
     }
