@@ -18,3 +18,6 @@
 - Actualización de README.md: agregado comando de instalación `pip install -r requirements.txt` para PowerShell
 - Lenguaje definido: todo el proyecto se desarrollará en Python
 - Creación de main.py como punto de entrada del bot
+- Creación de config.py con valores de SL (2%) y TP (4%)
+- Creación de find_SL_TP.py con la función calcular_sl_tp()
+- main.py actualizado para usar config.py y find_SL_TP.py
