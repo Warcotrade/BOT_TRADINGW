@@ -23,6 +23,6 @@ def find_SL_TP(entry_price, direction="long", stop_loss_percent=None, target_per
     return {
         "entry_price": entry_price,
         "direction": direction,
-        "stop_loss": round(stop_loss, 6),
-        "target": round(target, 6),
+        "stop_loss": round(stop_loss, 2),
+        "target": round(target, 2),
     }
