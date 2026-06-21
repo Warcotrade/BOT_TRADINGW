@@ -8,7 +8,9 @@ Proyecto de bot de trading para operaciones automatizadas en mercados financiero
 
 ## Instalación
 
-Pendiente de definir.
+```powershell
+pip install -r requirements.txt
+```
 
 ## Uso
 
