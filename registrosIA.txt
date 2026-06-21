@@ -36,3 +36,5 @@
 - main.py: ahora obtiene el precio de Bitcoin (BTC-USD) en tiempo real y calcula SL/TP
 - find_SL_TP.py: redondeo cambiado de 6 a 2 decimales
 - requirements.txt: agregado yfinance
+- Creación de market_data.py con función get_bitcoin_price() usando yfinance
+- main.py: simplificado, importa get_bitcoin_price() desde market_data.py
