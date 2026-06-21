@@ -16,3 +16,4 @@
 - Cambio de nombre: registros.txt → registrosIA.txt
 - Se establece que todo lo solicitado se registrará automáticamente en este archivo sin necesidad de recordatorio
 - Actualización de README.md: agregado comando de instalación `pip install -r requirements.txt` para PowerShell
+- Lenguaje definido: todo el proyecto se desarrollará en Python
