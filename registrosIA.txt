@@ -12,3 +12,6 @@
 - Creación de requirements.txt con las dependencias del proyecto
 - Creación de .gitignore
 - Creación de este archivo de registro (registros.md)
+- Cambio de nombre: registros.md → registros.txt
+- Cambio de nombre: registros.txt → registrosIA.txt
+- Se establece que todo lo solicitado se registrará automáticamente en este archivo sin necesidad de recordatorio
